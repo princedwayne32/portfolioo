@@ -137,3 +137,22 @@ section { margin-bottom: 72px; }
   position: relative;
   z-index: 20;
 }
+.hero-name-wrapper {
+  display: flex; /* Aligns image and text side-by-side */
+  align-items: center;
+  gap: 20px; /* Space between the image and name */
+}
+
+.profile-image-container {
+  width: 200px; /* Adjust this to match your desired "2x2" size */
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px; /* Optional: adds a slight curve to the corners */
+  border: 1px solid var(--border); /* Optional: adds a neat border */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This forces the photo to perfectly fill the square without stretching */
+}

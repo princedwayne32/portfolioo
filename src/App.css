@@ -1,0 +1,24 @@
+:root {
+  --bg: #0e0e0e;
+  --fg: #e8e4dc;
+  --accent: #c8f04e;
+  --muted: #555;
+  --border: #222;
+  --tag-bg: #1a1a1a;
+  --tag-fg: #888;
+  --mono: 'JetBrains Mono', monospace;
+  --spacing: 1px;
+}
+
+/* Add your [data-theme] variants here */
+[data-theme="simple"] { --bg:#fafaf8; --fg:#111; --accent:#2563eb; --muted:#aaa; --border:#e5e5e5; --tag-bg:#f0f0f0; --tag-fg:#555; }
+/* ... (Keep all other themes from your original file) */
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--mono);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Include all other CSS classes like .portal-card, .job, etc. */

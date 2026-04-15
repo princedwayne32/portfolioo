@@ -64,7 +64,7 @@ function App() {
     {/* Profile Image - Now on the left */}
     <div className="profile-image-container">
       <img 
-        src="src/assets/2x2.jpg" 
+        src="public/2x2.jpg" 
         alt="Prince Dwayne Bautista" 
         className="profile-image" 
       />

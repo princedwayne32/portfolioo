@@ -77,7 +77,7 @@ function App() {
   
   <p className="sub">
     Full-stack engineer with a passion for clean systems, great UX, and building things that matter.
-    Currently exploring distributed systems & robotics at Georgia Tech.
+    Currently exploring distributed systems & robotics at TIP.
   </p>
 </section>
 

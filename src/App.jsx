@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 // Helper Component para sa Project Cards
-const PortalCard = ({ num, title, desc }) => (
-  <a className="portal-card" href="#">
+const PortalCard = ({ num, title, desc, url }) => (
+  <a className="portal-card" href={url} target="_blank" rel="noopener noreferrer">
     <div style={{color: 'var(--accent)', fontSize: '10px', marginBottom: '8px'}}>{num}</div>
     <div style={{fontWeight: '700', color: 'var(--fg)', marginBottom: '6px'}}>{title}</div>
     <div style={{fontSize: '11px', color: 'var(--muted)'}}>{desc}</div>
@@ -81,15 +81,29 @@ function App() {
   </p>
 </section>
 
-        <section id="portals" className="fade-in">
-          <h2 className="section-title">### Portals</h2>
-          <div className="portals-grid">
-            <PortalCard num="#001" title="Web OS Portfolio" desc="Interactive OS environment." />
-            <PortalCard num="#002" title="Crypto Tracker" desc="Vite + React live data app." />
-            <PortalCard num="#003" title="Project #3" desc="N/A" />
-            <PortalCard num="#004" title="Project #4" desc="N/A" />
-          </div>
-        </section>
+<section id="portals" className="fade-in">
+  <h2 className="section-title">### Portals</h2>
+  <div className="portals-grid">
+    <PortalCard 
+      num="#001" 
+      title="Web OS Portfolio" 
+      desc="Interactive OS environment." 
+      url="https://portfolioo-navy-six.vercel.app" 
+    />
+    <PortalCard 
+      num="#002" 
+      title="react-es6-lab" 
+      desc="Vite + React live data app." 
+      url="https://react-es6-lab-eight.vercel.app" 
+    />
+    <PortalCard 
+      num="#student-portal-umber-delta" 
+      title="Project #3" 
+      desc="student-portal-umber-delta.vercel.app" 
+      url="https://student-portal-umber-delta.vercel.app" 
+    />
+  </div>
+</section>
 
         <section id="experience" className="fade-in">
           <h2 className="section-title">#### Experience</h2>

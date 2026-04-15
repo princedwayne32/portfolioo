@@ -126,3 +126,14 @@ section { margin-bottom: 72px; }
     gap: 16px;
   }
 }
+.portals-grid {
+  position: relative;
+  z-index: 10; /* Ensures the grid is above background layers */
+}
+
+.portal-card {
+  display: block;
+  cursor: pointer !important; /* Forces the hand icon */
+  position: relative;
+  z-index: 20;
+}
